@@ -176,10 +176,10 @@ void test_writeTeamToFile() {
  checkFileContent(filename, team, count);
 }
 int main() {
- test_createAthletesFile();
- test_sortAthletes();
- test_createTeam();
- test_writeTeamToFile();
- printf("All tests passed successfully.\n");
+    test_createAthletesFile();
+    test_sortAthletes();
+    test_createTeam();
+    test_writeTeamToFile();
+    printf("All tests passed successfully.\n");
  return 0;
 }
