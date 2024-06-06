@@ -136,9 +136,9 @@ expectedCount) {
  for (int i = 0; i < count; ++i) {
  assert(strcmp(products[i].name, expectedProducts[i].name) == 0);
 33
- assert(products[i].unitPrice == expectedProducts[i].unitPrice);
- assert(products[i].totalPrice == expectedProducts[i].totalPrice);
- assert(products[i].quantity == expectedProducts[i].quantity);
+    assert(products[i].unitPrice == expectedProducts[i].unitPrice);
+    assert(products[i].totalPrice == expectedProducts[i].totalPrice);
+    assert(products[i].quantity == expectedProducts[i].quantity);
  }
  free(products);
 }
