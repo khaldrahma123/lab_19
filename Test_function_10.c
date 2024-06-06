@@ -54,9 +54,9 @@ int orderCount) {
  for (int i = 0; i < orderCount; ++i) {
  for (int j = 0; j < *productCount; ++j) {
  if (strcmp(orders[i].name, products[j].name) == 0) {
- products[j].quantity -= orders[i].quantity;
- products[j].totalPrice = products[j].quantity * 
-products[j].unitPrice;
+    products[j].quantity -= orders[i].quantity;
+    products[j].totalPrice = products[j].quantity * 
+    roducts[j].unitPrice;
  // Если товар отпущен полностью, удаляем запись о нем
  if (products[j].quantity <= 0) {
  for (int k = j; k < *productCount - 1; ++k) {
